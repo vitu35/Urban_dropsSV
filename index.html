@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> <title>Urban-DropSV</title>
+<head>
+<title>Urban-DropSV</title>
 <meta charset="UTF-8">
 <title>Tienda</title>
 
@@ -11,8 +12,6 @@ body{
     background: #0b0b0b;
     color: white;
 }
-
-/* TITULO */
 .titulo-tienda{
     text-align: center;
     font-size: 32px;
@@ -21,8 +20,6 @@ body{
     margin: 30px 0 10px 0;
     letter-spacing: 3px;
 }
-
-/* CONTENEDOR DE PRODUCTOS */
 .productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -31,35 +28,28 @@ body{
     margin: 40px auto;
     padding: 0 20px;
 }
-
-/* TARJETA PRODUCTO */
 .producto{
     background: #111;
     padding: 15px;
     border-radius: 15px;
     text-align: center;
 }
-
-.nombre-PRODUCTO{
+.nombre-perfume{
     font-size: 14px;
     font-weight: bold;
     color: #c9a24d;
     margin-bottom: 6px;
     text-transform: uppercase;
 }
-
 .producto img{
     width: 100%;
     border-radius: 12px;
 }
-
 .precio{
     margin: 10px 0;
     font-size: 18px;
     font-weight: bold;
 }
-
-/* BOTONES */
 .whatsapp{
     display: block;
     margin: 8px 0;
@@ -69,7 +59,6 @@ body{
     text-decoration: none;
     border-radius: 10px;
 }
-
 .carrito-btn{
     padding: 10px;
     width: 100%;
@@ -80,8 +69,6 @@ body{
     cursor: pointer;
     margin-top: 10px;
 }
-
-/* CARRITO */
 #carrito{
     max-width: 400px;
     margin: 40px auto;
@@ -89,19 +76,6 @@ body{
     padding: 20px;
     border-radius: 15px;
 }
-
-.mercadopago{
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    padding: 10px;
-    background: #009ee3;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-/* CELULAR */
 @media (max-width: 768px){
     .productos{
         grid-template-columns: repeat(2, 1fr);
@@ -117,124 +91,151 @@ body{
 <div class="productos">
 
 <div class="producto">
-    <div class="nombre-perfume">CHICAGO THE FINALS (NEGRO)</div>
-    <img src="./Captura4em.jpeg">
-    <div class="precio">$45.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Chicago%20The%20Finals%20Negra" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CHICAGO THE FINALS (NEGRO)',45000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 1</div>
+<img src="./Captura4em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 1',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">CHICAGO THE FINALS (NEGRO)</div>
-    <img src="./Captura3em.jpeg">
-    <div class="precio">$45.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Chicago%20The%20Finals%20Negra" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CHICAGO THE FINALS (NEGRO)',45000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 2</div>
+<img src="./Captura3em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 2',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">CHICAGO THE FINALS (ROJO)</div>
-    <img src="./Captura2em.jpeg">
-    <div class="precio">$45.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Chicago%20The%20Finals%20Roja" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CHICAGO THE FINALS (Roja)',45000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 3</div>
+<img src="./Captura2em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 3',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">CHICAGO THE FINALS (ROJO)</div>
-    <img src="./Captura1.jpeg">
-    <div class="precio">$45.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Chicago%20The%20Finals%20Roja" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CHICAGO THE FINALS (Roja)',45000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 4</div>
+<img src="./Captura1.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 4',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">CHICAGO THE FINALS (CELESTE)</div>
-    <img src="./Captura5em.jpeg">
-    <div class="precio">$45.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Chicago%20The%20Finals%20Celeste" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CHICAGO THE FINALS (Celeste)',45000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 5</div>
+<img src="./Captura5em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 5',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">CHICAGO THE FINALS (CELESTE)</div>
-    <img src="./Captura6em.jpeg">
-    <div class="precio">$45.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Chicago%20The%20Finals%20Celeste" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CHICAGO THE FINALS (Celeste)',45000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 6</div>
+<img src="./Captura6em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 6',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">JORDAN JUMPMAN CLASSIC</div>
-    <img src="./Captura7em.jpeg">
-    <div class="precio">$20.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20realizar%20la%20Compra%20de%20Jordan%20Jumpman%20Classic" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('JORDAN JUMPMAN CLASSIC',20000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 7</div>
+<img src="./Captura7em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 7',25000)">Agregar al carrito</button>
 </div>
 
 <div class="producto">
-    <div class="nombre-perfume">JORDAN JUMPMAN CLASSIC</div>
-    <img src="./Captura8em.jpeg">
-    <div class="precio">$20.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20Realizar%20la%20Comprar%20de%20Jordan%20Jumpman%20Classic" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('JORDAN JUMPMAN CLASSIC',20000)">Agregar al carrito</button>
-</div>
-<div class="producto">
-    <div class="nombre-perfume">CAMPERA NIKE TECH (BLANCA)</div>
-    <img src="./Captura9em.jpeg">
-    <div class="precio">$50.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20Realizar%20la%20Comprar%20de%20una%20nike%20tech" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (BLANCO)',50000)">Agregar al carrito</button>
-</div>
-<div class="producto">
-    <div class="nombre-perfume">CAMPERA NIKE TECH (NEGRO)</div>
-    <img src="./Captura10em.jpeg">
-    <div class="precio">$50.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20Realizar%20la%20Comprar%20de%20una%20nike%20tech" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (NEGRO)',50000)">Agregar al carrito</button>
-</div>
-<div class="producto">
-    <div class="nombre-perfume">CAMPERA NIKE TECH (AZUL)</div>
-    <img src="./Captura11em.jpeg">
-    <div class="precio">$50.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20Realizar%20la%20Comprar%20de%20una%20nike%20tech" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (AZUL)',50000)">Agregar al carrito</button>
-</div>
-<div class="producto">
-    <div class="nombre-perfume">CAMPERA NIKE TECH (GRIS)</div>
-    <img src="./Captura12em.jpeg">
-    <div class="precio">$50.000</div>
-    <a class="whatsapp" href="https://wa.me/5491138441080?text=Hola,%20quiero%20Realizar%20la%20Comprar%20de%20una%20nike%20tech" target="_blank">WhatsApp</a>
-    <button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (GRIS)',50000)">Agregar al carrito</button>
+<div class="nombre-perfume">Gorra TEAM YANKEES 8</div>
+<img src="./Captura8em.jpeg">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 8',25000)">Agregar al carrito</button>
 </div>
 
+<div class="producto">
+<div class="nombre-perfume">CAMPERA NIKE TECH (BLANCA)</div>
+<img src="./Captura9em.jpeg">
+<div class="precio">$50.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (BLANCO)',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">CAMPERA NIKE TECH (NEGRO)</div>
+<img src="./Captura10em.jpeg">
+<div class="precio">$50.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (NEGRO)',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">CAMPERA NIKE TECH (AZUL)</div>
+<img src="./Captura11em.jpeg">
+<div class="precio">$50.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (AZUL)',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">CAMPERA NIKE TECH (GRIS)</div>
+<img src="./Captura12em.jpeg">
+<div class="precio">$50.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('CAMPERA NIKE TECH (GRIS)',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">Gorra TEAM YANKEES 9</div>
+<img src="./Captura13em.png">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 9',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">Gorra TEAM YANKEES 10</div>
+<img src="./Captura14em.png">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 10',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">Gorra TEAM YANKEES 11</div>
+<img src="./Captura15em.png">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 11',25000)">Agregar al carrito</button>
+</div>
+
+<div class="producto">
+<div class="nombre-perfume">Gorra TEAM YANKEES 12</div>
+<img src="./Captura16em.png">
+<div class="precio">$25.000</div>
+<a class="whatsapp" href="https://wa.me/5491138441080" target="_blank">WhatsApp</a>
+<button class="carrito-btn" onclick="agregar('Gorra team yankee 12',25000)">Agregar al carrito</button>
+</div>
+
+</div>
 
 <div id="carrito">
-    <h2>Carrito</h2>
-    <ul id="lista"></ul>
-    <p><strong>Total: $<span id="total">0</span></strong></p>
-
-    <a class="mercadopago" href="https://link.mercadopago.com.ar/TULINK" target="_blank">
-        Pagar con Mercado Pago
-    </a>
-
-    <button class="carrito-btn" onclick="vaciarCarrito()">
-        Vaciar carrito
-    </button>
+<h2>Carrito</h2>
+<ul id="lista"></ul>
+<p><strong>Total: $<span id="total">0</span></strong></p>
+<button class="carrito-btn" onclick="vaciarCarrito()">Vaciar carrito</button>
 </div>
 
 <script>
 let total = 0;
-
 function agregar(nombre, precio){
     total += precio;
     document.getElementById("total").innerText = total;
-
     let li = document.createElement("li");
     li.textContent = nombre + " - $" + precio;
     document.getElementById("lista").appendChild(li);
 }
-
 function vaciarCarrito(){
     total = 0;
     document.getElementById("total").innerText = total;
@@ -244,5 +245,6 @@ function vaciarCarrito(){
 
 </body>
 </html>
+
 
 
